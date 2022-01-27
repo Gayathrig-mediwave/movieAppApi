@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Imdb - Find and add movies</h1>
+
+        <div id="add-movies" class="">
+            <button id="show-movies-btn">Show movies</button>
+            <h3 id="FormTite">Add a new movie</h3>
+
+            <form id="add-movie-form">
+                <div>
+                    <label for="movie-name">Name</label>
+                    <input type="text" name="movie-name" id="movie-name" />
+                </div>
+                <div>
+                    <label for="movie-year">Year</label>
+                    <input type="number" name="movie-year" id="movie-year" />
+                </div>
+                <div>
+                    <label for="movie-rating">Rating</label>
+                    <select name="movie-rating" id="movie-rating">
+                        <option value="1">1 star</option>
+                        <option value="2">2 stars</option>
+                        <option value="3">3 stars</option>
+                        <option value="4">4 stars</option>
+                        <option value="5">5 stars</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="movie-genre">Genre</label>
+                    <input type="text" name="movie-genre" id="movie-genre" />
+                </div>
+
+                <div>
+                    <h4>Image</h4>
+                    <div>
+                        <label for="movie-image-url">Image url</label>
+                        <input type="text" name="movie-image-url" id="movie-image-url" />
+                    </div>
+                    <div>
+                        <label for="movie-image-alt">Image alt</label>
+                        <input type="text" name="movie-image-alt" id="movie-image-alt" />
+                    </div>
+                </div>
+
+                <div>
+                    <input type="submit" value="➕ Add new movie" id="add-new-movie" />
+                </div>
+            </form>
+        </div>
+
+        <div id="all-movies" class="d-none">
+            <button id="add-movies-btn">Add a new movie</button>
+            <h3>Available movies</h3>
+            <div id="movie-list" class="list">
+
+                <!-- <div class="item">
+          <img src="https://i.pravatar.cc/300" alt="Ironman 2008 DVD cover">
+          <h4>Ironman</h4>
+          <p>2008</p>
+          <p>⭐️⭐️⭐️⭐️</p>
+          <p>Fantasy</p>
+        </div> -->
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
